@@ -1,7 +1,9 @@
+import styles from '../styles/Navbar.module.scss';
+
 const Navbar = () => {
   return (
     <nav>
-      <h1>Navbar</h1>
+      <h1>Omar</h1>
     </nav>
   );
 };

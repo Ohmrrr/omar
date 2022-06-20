@@ -1,18 +1,17 @@
 import styles from '../styles/Footer.module.scss';
-import Image from 'next/image';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <footer className={styles.footer}>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer">
-        Powered by{' '}
-        <span className={styles.logo}>
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </span>
-      </a>
+      <div className={styles.container}>
+        <AiFillGithub className={styles.icon} />
+        <AiFillLinkedin className={styles.icon} />
+      </div>
+
+      <span>&copy; {year} Omar Sadat</span>
     </footer>
   );
 };
