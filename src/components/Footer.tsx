@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.container}>
+      <div className={styles['icon-container']}>
         <AiFillGithub className={styles.icon} />
         <AiFillLinkedin className={styles.icon} />
       </div>
